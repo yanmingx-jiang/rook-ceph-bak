@@ -1,0 +1,459 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-1
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-2
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-3
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-4
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-5
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-6
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-7
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-8
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-9
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data9
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-1-10
+spec:
+  capacity:
+    storage: 200Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: data-sc
+  local:
+    path: /mnt/disks/data10
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-1
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-2
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-3
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-4
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-5
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-6
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-7
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-8
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-9
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta9
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: meta-1-10
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Block
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: meta-sc
+  local:
+    path: /mnt/disks/meta10
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - see-prc-tingjie-ceph-1
